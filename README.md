@@ -59,7 +59,7 @@ The contract prevents re-entrancy attacks using the **Checks-Effects-Interaction
    - Update the user's balance before transferring Ether to prevent repeated calls.
    - This ensures any re-entrant call will fail due to insufficient balance.
 
-2. **`nonReentrant`**** Modifier**:
+2. **nonReentrant Modifier**:
 
    - The `nonReentrant` modifier blocks re-entrant calls during the execution of the `deposit` and `withdraw` functions, adding an extra layer of protection.
 
